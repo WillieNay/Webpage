@@ -1,15 +1,4 @@
-import requests
 import streamlit as st
-
-# Function to fetch data from the API
-def fetch_data():
-    url = "https://rapidapi.com/data"
-    response = requests.get(url)
-    if response.status_code == 200:
-        return response.json()
-    else:
-        return None
-
 
 
 st.set_page_config(page_title="MOE Learning Centre", page_icon=":::man_student:", layout="wide")
@@ -30,18 +19,15 @@ with st.container():
         st.write('##')
         st.write (
             """
-            
+            Currently, we provide basic English, Math Science clasess for various grades:
+            - We follow a variety of ciriculums provided by Cambridge, Pearson, and many more
+            - Other courses such as summer school, English language speaking, IT and British Council level exam focus classes.
 
 
+            If you are interested, contact us for further detailed inquiries.
+           """
 
-
-
-"""
-
-
-
-
-
-
-        )
+         )
+        
+        st.write("[Facebook Page >](https://www.facebook.com/profile.php?id=100086756350545&mibextid=LQQJ4d)")
 
